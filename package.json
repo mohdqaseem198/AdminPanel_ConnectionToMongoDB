@@ -9,15 +9,28 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tiptap/extension-bullet-list": "^3.7.2",
+    "@tiptap/extension-highlight": "^3.7.2",
+    "@tiptap/extension-history": "^3.7.2",
+    "@tiptap/extension-list-item": "^3.7.2",
+    "@tiptap/extension-ordered-list": "^3.7.2",
+    "@tiptap/react": "^3.7.2",
+    "@tiptap/starter-kit": "^3.7.2",
+    "axios": "^1.12.2",
+    "cloudinary": "^2.7.0",
+    "he": "^1.2.0",
+    "mongoose": "^8.19.1",
+    "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "react-toastify": "^11.0.5",
+    "xlsx-js-style": "^1.2.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4"
   }
 }
