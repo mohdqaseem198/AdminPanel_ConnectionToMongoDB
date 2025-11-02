@@ -1,25 +1,21 @@
 'use client';
 import React from "react";
 import { signInWithPopup } from "firebase/auth";
-import { auth, provider } from "../firebase";
+import { auth, provider } from "../../firebase";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
-import { useAuthStore } from "@/Store/ZustandStore";
 
 const Login = () => {
 
     const router = useRouter();
-    const {setUser, setToken} = useAuthStore();
 
     const handleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
       toast.success(`Welcome ${result.user.displayName}`);
-      console.log('Token is : ' ,result.user.accessToken);
+      console.log(`Token ${result.user.accessToken}`);
 
       if(result.user.accessToken){
-        setUser(result.user.displayName);
-        setToken(result.user.accessToken);
         router.push('/Home');
       }
 

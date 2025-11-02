@@ -41,12 +41,6 @@ const blogListing = () => {
                 <Link key={single._id} href={`/Blog-reading?id=${single._id}`}>
                     <div className="flex flex-col justify-center border p-5 rounded-3xl my-5">
                         <h2 className="text-bold text-3xl m-auto">{single.heading? single.heading : 'Heading'} </h2>
-                        {/* <div
-                              className="prose max-w-none mt-3"
-                              dangerouslySetInnerHTML={
-                                { __html: single.blogText ? he.decode(single.blogText) : "Content here",}
-                            }
-                        ></div> */}
                     </div>
                 </Link>
             )
